@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title>House Of Cards</title>
+        <link rel="icon" href="__">
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- imported fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body class>
+    
+        <!-- navbar
+
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+
+        When To Modify:
+        - [ ] Project 4 (REQUIRED FEATURE)
+        - [ ] Project 5 (REQUIRED FEATURE) 
+        - [ ] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li id = "theme-button"><a href="#">Toggle Dark Mode</a></li>
+            </ul>
+        </div>
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <div class = "header-container">
+            <div class="background-img">
+                <div class="img-overlay"></div>
+            </div>
+            <!-- <img src = "images/background.jpg" style = "width: 100%"> -->
+            
+            
+            <div class = "centered">
+                <div id="home">
+                    <h1>HOUSE OF CARDS</h1>
+                    <h2>cpp card game club</h2>
+                    <button type="button">Join on MyBar</button>
+                    <button type="button">Newsletter</button>
+                </div>
+            </div>
+
+            
+        </div>
+
+    <div class="body">
+    <!--ABOUT THE CLUB-->
+        <div id = "about">
+            <h1>ABOUT US</h1>
+            <div class = "about-container">
+                <div class = "video">
+                    <!-- 
+                    <iframe width="500" height="315" src="https://www.youtube.com/embed/RbknCzcVDEU?si=It8s1g-djQ-MqN2L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    -->
+                    <img src="images/gifs/snoopy_shuffle.gif">
+                </div>
+                <div class = "about-text">
+                    <p>Join us for a night of strategy, fun, and friendly competition! Whether you're a seasoned player or just starting out, everyone is welcome to test their skills! We play a variety of games and offer resources for tutorials or come in person for help!</p>
+                    <p><b>Weekly Meetings:</b></p>
+                        <ul>
+                            <li>Days: Every Friday</li>
+                            <li>Time: 4:00pm - 6:00pm</li>
+                            <li>Location: Bldg #, Rm #</li>
+                        </ul>
+                        <br>
+                        <button>Become a Member</button>
+                        <button>Join Weekly Newsletter</button>
+                </div>
+            </div>
+        </div>
+            
+
+            
+            <!-- about
+
+            Purpose:
+            - Section for general info about the event
+            - Contains a video, description, and key points about the event
+
+            When To Modify:
+            - [ ] Project 2 (REQUIRED FEATURE) 
+            - [ ] Project 2 (STRETCH FEATURE) 
+            - [ ] Project 4 (STRETCH FEATURE) 
+            - [ ] Any time between / after
+            --> 
+            <hr>
+            <!--EVENTS-->
+            <h1 id = "events">UPCOMING EVENTS</h2>
+                <img src="images/student_tournament.png" width="100%">
+            <h2>Tournament: Friday, [Month/Day]</h3>
+            <p>Join us for an exciting and competitive Bicycle Cards Tournament, where players can showcase their skills in various card games, from strategy-based classics to fast-paced challenges. Whether you're a seasoned player or new to the game, this tournament promises fun and fierce competition! Test your abilities, challenge friends, and win amazing prizes while enjoying the company of fellow card enthusiasts. With multiple rounds, exciting challenges, and a grand prize at the end, this is an event you won't want to miss!</p>
+            <h4>An afternoon of fun!</h4>
+            <ul>
+                <li> <b>Games:</b> <i>Solitaire, Spades, Rummy, Crazy Eights, etc...</i></li>
+                <li> <b>Prizes:</b> <i>$50 gift card to restaurant/game-store of choosing, Custom card deck, Card-themed hoodie with club logo</i></li>
+                <li> <b>Food:</b> <i>Pizza (including vegan options), Chips and dip station, desserts</i></li>
+            </ul>
+
+            <!-- schedule
+
+            Purpose:
+            - Section for specific info about the event's schedule
+            - Contains images and descriptions of each activity
+
+            When To Modify:
+            - [ ] Project 2 (REQUIRED FEATURE) 
+            - [ ] Project 4 (STRETCH FEATURE) 
+            - [ ] Any time between / after
+            --> 
+            <h2>event schedule</h2>
+            <div class = "event-container">
+                    <!-- [1] CHECK-IN -->
+                <div class = "schedule-container">
+                    <div class="schedule-left">
+                        <img class = "schedule-img" alt="imagesdes" src="./images/check-in.jpg"/>
+                        <h3>check-in</h3>
+                        <h4>12:00pm-12:30pm</h4>
+                    </div>
+                    <p>Sign in and see who you're up against. Participants arrive, confirm your RSVP, and get your table numbers. Meet other players and warm up with a casual game.</p>
+                </div>
+                <!-- [2] ROUND 1 -->
+                <div class = "schedule-container">
+                    <div class="schedule-left">
+                        <img class = "schedule-img" alt="Image description" src="./images/tempImage.jpg"/>
+                        <h3>round 1</h3>
+                        <h4>12:30pm-1:30pm</h4>
+                    </div>
+                    <p>Players compete in solo games at different tables. The top scorers from each game will move on to the 1v1 finals. Scoring is based on performance and sportsmanship.</p>
+                </div>
+                <!-- [3] LUNCH -->
+                <div class = "schedule-container">
+                    <div class="schedule-left">
+                        <img class = "schedule-img" alt="Image description" src="./images/lunch.jpg"/>
+                        <h3>lunch</h3>
+                        <h4>2:30pm-3:15pm</h4>
+                    </div>
+                    <p>A casual lunch with music and snacks, giving players a chance to socialize, talk strategy, and relax before the final round.</p>
+                </div>
+                <!-- [4] FINAL ROUND -->
+                <div class = "schedule-container">
+                    <div class="schedule-left">
+                        <img class = "schedule-img" alt="Image description" src="./images/tempImage.jpg"/>
+                        <h3>final round</h3>
+                        <h4>3:15pm-4:30pm</h4>
+                    </div>
+                    <p>The best players from round 1 will go head-to-head in 1v1 battles. Winners of each match will compete in a final table showdown for the top prize.</p>
+                </div>
+                <!-- [5] CLOSING CEREMONY -->
+                <div class = "schedule-container">
+                    <div class="schedule-left">
+                        <img class = "schedule-img" alt="Image description" src="./images/medal.jpg"/>
+                        <h3>closing ceremony</h3>
+                        <h4>5:00pm-5:30pm</h4>
+                    </div>
+                    <p>Well announce winners, hand out prizes, and take a group photo. Everyone walks away with memories, good vibes, and possibly a new favorite card game!</p>
+                </div>
+            </div>
+            
+            
+            
+            <!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+            <div id="rsvp">
+                <h3>rsvp here!</h3>
+                <div class="rsvp-container">
+                    <div class="rsvp-para">
+                        <h3>info: </h3>
+                        <p>
+                            <b>Signups:</b>
+                            <br>Interested in joining? Fill out the quick Sign-Up Form on our website at least 3 days before the event. Experience needed to RSVP so view our resources to understand how to play the games! Bring your game face and a love for cards!
+                            <br>
+                            <b>RSVPs:</b>
+                            <br>Already a club member or been to our events before? RSVP to reserve your seat! Space is limited and signups are on a first-come, first-served basis.
+                        </p>
+                        <p id="rsvp-count">Total RSVP's: 3</p>
+                    </div>
+                    <div class="rsvp-participants">
+                        <h3>contestant list: </h3>
+                        <div class="participants">
+                            <p>Bartholemew studying Biology has RSVP'D</p>
+                            <p>Gargomel studying Animation has RSVP'D</p>
+                            <p>Patrick studying Hospitality has RSVP'D</p>
+                                <!-- new RSVPs go here -->
+                          </div>
+                    </div>
+                </div>
+
+                <div class="form-containter">
+                    <form>
+                        <input type="text" id="name" placeholder="First Name">
+                        <input type="text" id="major" placeholder="Major">
+                        <input type="email" id="email" placeholder="example@email.com" required>
+                    </form>
+                    <!--Submit Button-->
+                    <button id="rsvp-button">Submit RSVP</button>
+                </div>
+            </div>
+            
+
+            <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+
+            
+            
+            <!-- LINKS
+            Purpose:
+            - Links to other resources related to the event
+            When To Modify:
+            - [ ] Project 2 (STRETCH FEATURE) 
+            - [ ] Project 4 (STRETCH FEATURE) 
+            - [ ] Any time between / after
+            --> 
+
+            <hr>
+            <!--RESOURCES-->
+            <h1 id = "resources">RESOURCES!</h2>
+            <!--Tutorials-->
+            <h3>Tutorials for games here:</h3>
+            <a class="block" href="https://bicyclecards.com/how-to-play/">
+                <article>
+                    <h4>Bicycle Cards: How to play</h3>
+                    <p>Explore our collection of rules to our favorite games!</p>
+                </article>
+            </a>
+            <!--Buy Cool Card Decks-->
+            <h3>Buy cool card decks here!:</h3>
+            <a class="block" href="https://bicyclecards.com/shop?category=Cards&numberOfResults=24">
+                <article>
+                    <h4>Bicycle Cards: Shop</h3>
+                    <p>Shop playing cards, games and accessories!</p>
+                </article>
+            </a>
+
+            <hr>
+            <!-- CONTACT-->
+            <h1 id="contact">CONTACT US</h1>
+            <div>
+                <ul>
+                    <li><a href="#discord">Discord</a></li>
+                    <li><a href="#instagram">Instagram</a></li>
+                    <li><a href="#email">Email</a></li>
+                </ul>
+            </div>
+            <div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name">
+                    <br>
+                    <input type="email" placeholder="Email Address">
+                    <br>
+                    <input type="text" placeholder="Subject">
+                    <br>
+                    <input type="text" id="message" placeholder="Your Message: ">
+                </form>
+            </div>
+            
+            <p>asdfasdfasdf</p>
+        </div>
+
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <div class = "footer">
+            <a href="https://maps.app.goo.gl/u9npN6DXuZKmAs7cA">| Location | </a>
+            <a href="tempemail@tempmail.com">| Email Us |</a>
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+</html>

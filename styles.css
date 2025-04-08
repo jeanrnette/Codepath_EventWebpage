@@ -1,0 +1,547 @@
+/* Add CSS styles for your web site here and use them in index.html. */
+
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
+html {
+    background-color: var(--bg-color);
+}
+
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+
+  When To Modify:
+  - [ ] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+body {
+    /* Add a background color or image */
+    background-color: var(--bg-color); /* see bottom of file for color variables */
+
+    /* Customize the default size, color, and font for text*/
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: 'Fauna One', serif;
+    font-size: 15px;   /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
+
+    /* Put space around the edges of the webpage */
+    margin: 0px;
+    margin-bottom: 50px;
+    padding: 0px;
+}
+
+.body {
+  margin: 0 10%;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #000; /* black horizontal line */
+  margin: 2rem 0;
+  width: 100%; /* optional */
+}
+
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+h1 {
+  font-family: Cinzel, serif;
+  font-size: 45px;  
+}
+
+h2 {
+  font-family: Cinzel, serif;
+  font-size: 30px;  
+}
+
+h3 {
+  font-family: Cinzel, serif;
+  font-size: 20px;  
+}
+
+h4 {
+  font-family: Cinzel, serif;
+  font-size: 15px;  
+}
+
+p {
+  font-family: 'Fauna One', serif;
+  font-size: 15px;
+}
+
+
+/* LINKS */
+a:link {
+  color: rgb(102, 7, 38);
+}
+
+a:visited {
+  color: rgb(212, 35, 83);
+}
+
+a:hover {
+  color: rgb(116, 152, 203);
+}
+
+
+a:active {
+  color: rgb(179, 0, 137)
+}
+
+a,
+a * {
+
+}
+
+/* BUTTON */
+button {
+    font-family: 'Fauna One', serif;
+    font-size: 11px;
+    border-radius: 8px;
+    border-color: #000000;
+    color: antiquewhite;                /* text color */
+    background-color: rgb(134, 23, 36); /* button color */
+    padding: 5px 12px;          /* space between button's text and edge */
+    cursor: pointer;            /* makes the cursor change when over button */
+}
+
+button:hover {
+    /* Make the button look different when the user hovers over it */
+    color: rgb(134, 23, 36);                /* text color */
+    background-color: rgb(212, 161, 94); /* button color */
+}
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.header-container { /* Example A: This styles elements with class="header" */
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  text-align: center;
+
+  width: 100%;
+  height: 100vh; /* Sets the height to 10% of the viewport height */
+  position: relative;
+}
+
+.centered {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9), -1px -1px 3px rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ID selector for header-left */
+#header-item:nth-of-type(1) {
+  width: 30%;
+}
+
+/* ID selector for header-right */
+#header-iten:nth-of-type(2)  {
+  width: 70%;
+}
+
+/* ID selector for header-img */
+#header-img {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 60px;
+  width: auto;
+  max-width: 20%;
+
+}
+
+/* Class selector for header-button */
+.header-button {
+  background-color: rgb(134, 23, 36); /* button color */
+  text-align: center;
+  font-size: large;
+  color: antiquewhite;                /* text color */
+
+  padding: 5px 12px;          /* space between button's text and edge */
+  margin: 0px;
+  border-radius: 8px;
+  border-color: #000000;
+
+  cursor: pointer;            /* makes the cursor change when over button */
+}
+
+.background-img {
+  background-image: url(images/background.jpg);
+  width: 100%;
+  height: 100vh;
+
+  /*Help from Chatgpt*/
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.img-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100vh;
+}
+
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer { /* Example B: This styles elements with class="footer" */
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #144b2e;
+  color: #fff;
+}
+
+.footer a {
+  text-decoration: none; /* removes underline from link */
+  color: #e2ddb8;
+}
+
+/*** Navigation bar (navbar) ***
+  
+  Purpose:
+  - Add style rules for your website's navbar
+
+  When To Modify:
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.navbar ul {
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: #441318;
+    border-bottom: 2px solid black;
+}
+
+.navbar ul li {
+    float: left;
+    margin: 10px;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none; /* removes underline from link */
+    color: #e2ddb8;
+    padding: 5px;
+}
+
+.navbar ul li a:hover {
+  border-radius: 3px;
+  color:rgb(102, 7, 38);
+  background-color: #e2ddb8;
+}
+
+/* for the Hamburger menu when width is smaller */
+.menu-toggle {
+  font-size: 28px;
+  color: #e2ddb8;
+  display: none;
+  cursor: pointer;
+}
+
+/*** ABOUT Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+.about-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.video {
+  margin-right: 30px;
+}
+.video img {
+  width: 500px; 
+  height: 315px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #140808;
+}
+
+
+/*** SCHEDULE Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+.event-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule-container {
+  flex: 1 1 18%; /*1 for growth, 1 for shrink, 18% for basis*/
+  padding: 10px;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;;
+  background-color:rgb(185, 122, 117);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.schedule-img {
+  border-radius: 4px;
+  height: 150px;
+  width: 200px;
+}
+
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.rsvp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+
+  justify-content: space-around;
+}
+
+.rsvp-para {
+  width: 55%;
+  padding-right: 10px;
+
+  text-align: left;
+}
+
+.rsvp-participants {
+  width: 45%;
+  padding-right: 10px;
+  
+  text-align: left;
+}
+
+#message{
+  display: block;
+  height: 100px;
+}
+
+
+
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+
+
+/*** PHONE Orientation ***/
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #441318;
+    display: none;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+  .video {
+    margin-right: 0px;
+  }
+  .video img {
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #140808;
+  }
+
+  .event-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .schedule-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+  }
+  .schedule-left {
+    margin-right: 10px;
+    width: 50%;
+  }
+  
+  .schedule-img {
+    border-radius: 4px;
+    height: 100px;
+    width: 150px;
+  }
+
+  .rsvp-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .rsvp-para {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .rsvp-participants {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Default dark mode style */
+.dark-mode {
+  color:#e2ddb8;
+  background-color: #0b301c;
+
+}
+
+.dark-mode .schedule-container {
+  background-color: #2c1113;
+}
+
+/* Example: Different dark mode style for visited links */
+.dark-mode a:visited * {
+  /* optional */
+}
+
+.dark-mode .background-img{
+  background-image: url(images/darkmode_background.jpg);
+}
+
+.dark-mode .navbar ul {
+    background-color: #2e0d11;
+}
+
+.dark-mode .footer {
+  background-color: #000000;
+}
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color: rgb(237, 224, 198);
+    --text-color: #000000;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3f0f0f;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
